@@ -1,7 +1,7 @@
 #include <iostream>
-#include "leituraEntrada.h"
-#include "ordenaVetores.h"
-#include "imprimeSaida.h"
+#include "entrada/leituraEntrada.h"
+#include "vetores/ordenaVetores.h"
+#include "saida/imprimeSaida.h"
 
 int main(int argc, char *argv[]){
 
@@ -13,7 +13,7 @@ int main(int argc, char *argv[]){
 
     //Cria NUM_ITER vetores, popula de acorodo com tipoVetor, ordena segundo estipulado por variacaoQS e apura a média
     //de comparações, movimentações e tempo
-    int NUM_ITER = 2;
+    int NUM_ITER = 50;
 
     long media_comp, media_mov;
     int media_tempo;
