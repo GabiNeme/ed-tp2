@@ -1,6 +1,9 @@
 #include "vetores/preencheVetor.h"
 
-
+/*
+    Identifica o tipo de vetor escolhido pelo usuário (Ale, OrdC e OrD) e chama
+    o procedimento correspondente que irá preencher o vetor
+*/
 void preencheVetorNumeros(int vetorAOrdenar[], int tamVet, std::string tipo){
     if (tipo.compare("Ale") == 0){
         preencheVetorAleatorio(vetorAOrdenar, tamVet);
@@ -14,6 +17,9 @@ void preencheVetorNumeros(int vetorAOrdenar[], int tamVet, std::string tipo){
     }
 }
 
+/*
+    Preenche o vetor de forma crescente
+*/
 void preencheVetorCrescente(int vetorAOrdenar[], int tamVet){
     for(int i = 0; i < tamVet; i++){
         vetorAOrdenar[i] = i;
@@ -21,6 +27,9 @@ void preencheVetorCrescente(int vetorAOrdenar[], int tamVet){
     return;
 }
 
+/*
+    Preenche o vetor de forma decrescente
+*/
 void preencheVetorDecrescente(int vetorAOrdenar[], int tamVet){
     for(int i = 0; i < tamVet; i++){
         vetorAOrdenar[i] = tamVet - i -1 ;
@@ -28,6 +37,10 @@ void preencheVetorDecrescente(int vetorAOrdenar[], int tamVet){
     return;
 }
 
+
+/*
+    Preenche o vetor usando números aleatórios entre 0 e tamVet
+*/
 void preencheVetorAleatorio(int vetorAOrdenar[], int tamVet){
     //srand(time(nullptr));
     for(int i = 0; i < tamVet; i++){
@@ -36,6 +49,10 @@ void preencheVetorAleatorio(int vetorAOrdenar[], int tamVet){
     return;
 }
 
+
+/*
+    Função que imprime o vetor na saída padrão
+*/
 void imprimeVetor(int vetor[], int ini, int fim){
     for(int i = ini; i <= fim; i++){
         std::cout << vetor[i] << " ";

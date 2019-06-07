@@ -3,5 +3,3 @@
 #include "insercao/insercao.h"
 
 void QI_Ordena(int vetor[], int Esq, int Dir, long &comp, long &mov, int limInser);
-
-void QI_Particao(int vetor[],int Esq, int Dir, int &i, int &j, long &comp, long &mov);
