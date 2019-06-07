@@ -1,7 +1,7 @@
 #include "vetores/ordenaVetores.h"
 
 
-void ordenaVetores(std::string variacaoQS, std::string tipoVetor, int numItens, long &media_comp, 
+void ordenaVetores(std::string variacaoQS, std::string tipoVetor, int numItens, long &media_comp,
 long &media_mov, int &media_tempo, int num_iter, std::string &vets){
 
     long n_comp[num_iter], n_mov[num_iter];
@@ -14,7 +14,7 @@ long &media_mov, int &media_tempo, int num_iter, std::string &vets){
         long mov = 0;
         int temp = 0;
 
-        preencheVetorNumeros(vetor, numItens, tipoVetor); 
+        preencheVetorNumeros(vetor, numItens, tipoVetor);
         concatenaVetores(vetor, numItens, vets);
 
 

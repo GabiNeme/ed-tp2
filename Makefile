@@ -1,5 +1,5 @@
 CC := g++
-SRCDIR := src
+SRCDIR := cpp
 OBJDIR := build
 BINDIR := bin
 

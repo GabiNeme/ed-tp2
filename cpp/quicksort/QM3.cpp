@@ -17,7 +17,7 @@ void QM3_Particao(int vetor[],int Esq, int Dir, int &i, int &j, long &comp, long
 }
 
 
-
+/*
 int QM3_mediana(int n1, int n2, int n3, long &comp){
     if((n2 < n1 && n1 < n3) || (n3 < n1 && n1 < n2) ){
         comp = comp + 4;
@@ -28,5 +28,35 @@ int QM3_mediana(int n1, int n2, int n3, long &comp){
     }else {
         comp = comp + 8;
         return n3;
+    }
+}*/
+
+int QM3_mediana(int n1, int n2, int n3, long &comp){
+    if(n1 < n2){
+        if (n2 < n3){ //n1 n2 n3
+            comp = comp + 2;
+            return n2;
+        }else{ // n3? n1 n3? n2
+            if (n1 > n3){
+                comp = comp + 3;
+                return n1;
+            }else{
+                comp = comp + 3;
+                return n3;
+            }
+        }
+    }else { // n3? n2 n3? n1 n3?
+        if (n3 > n1){ //n2 n1 n3
+            comp = comp + 2;
+            return n1;
+        }else{ // n3? n2 n3? n1
+            if (n3 < n2){
+                comp = comp + 3;
+                return n2;
+            }else{
+                comp = comp + 3;
+                return n3;
+            }
+        }
     }
 }

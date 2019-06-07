@@ -14,7 +14,6 @@ int main(int argc, char *argv[]){
     //Cria NUM_ITER vetores, popula de acorodo com tipoVetor, ordena segundo estipulado por variacaoQS e apura a média
     //de comparações, movimentações e tempo
     int NUM_ITER = 50;
-
     long media_comp, media_mov;
     int media_tempo;
     std::string vetoresUsados;
@@ -24,5 +23,6 @@ int main(int argc, char *argv[]){
 
     //imprime saida
     imprimeSaida(variacaoQS, tipoVetor, tamVet, media_comp, media_mov, media_tempo, vetoresUsados, exibirVetores);
+
 
 }
